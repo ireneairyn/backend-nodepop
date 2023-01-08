@@ -35,7 +35,7 @@ async function initAnuncios(){
 }
 
 function askConfirmRemoval(text){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const interface = readline.createInterface({
             input: process.stdin,
             output: process.stdout
@@ -49,4 +49,4 @@ function askConfirmRemoval(text){
             resolve(false);
         });
     });
-};
+}

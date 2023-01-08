@@ -1,8 +1,6 @@
 "use strict";
 
-const { forEachOfLimit } = require("async");
 const express = require("express");
-const createError = require("http-errors");
 const Anuncio = require("../../../models/Anuncio");
 
 // Create router

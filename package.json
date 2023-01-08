@@ -7,7 +7,8 @@
     "init-db": "node ./init-db.js",
     "dev": "cross-env DEBUG=nodepop:* PORT=3000 nodemon",
     "jshint": "./node_modules/.bin/jshint ./routes/api/.",
-    "jscs": "./node_modules/.bin/jscs ./routes/api/."
+    "jscs": "./node_modules/.bin/jscs ./routes/api/.",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "async": "^3.2.4",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "eslint": "^8.31.0",
     "nodemon": "^2.0.20"
   }
 }
