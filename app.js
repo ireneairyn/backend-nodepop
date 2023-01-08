@@ -35,7 +35,7 @@ app.use("/api/v1/tags", require("./routes/api/v1/tags"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  var err = new Error(mensajesError(req, localConfig.errores.NOT_FOUND));
+  var err = new Error("Not found");
   err.status = 404;
   next(err);
 });

@@ -1,25 +1,23 @@
-{
-  "anuncios": [
-    {
-      "nombre": "Helmet",
-      "venta": true,
-      "precio": 98.00,
-      "foto": "helmet.jpg",
-      "tags": [ "lifestyle", "motor"]
-    },
-    {
-      "nombre": "tablet",
-      "venta": false,
-      "precio": 300.00,
-      "foto": "tablet.jpg",
-      "tags": [ "mobile", "work"]
-    },
-    {
-      "nombre": "whistle",
-      "venta": true,
-      "precio": 3.00,
-      "foto": "whistle.jpg",
-      "tags": [ "lifestyle"]
-    }
-  ]
-}
+[
+  {
+    "nombre": "Helmet",
+    "venta": true,
+    "precio": 98.0,
+    "foto": "helmet.jpg",
+    "tags": ["lifestyle", "motor"]
+  },
+  {
+    "nombre": "tablet",
+    "venta": false,
+    "precio": 300.0,
+    "foto": "tablet.jpg",
+    "tags": ["mobile", "work"]
+  },
+  {
+    "nombre": "whistle",
+    "venta": true,
+    "precio": 3.0,
+    "foto": "whistle.jpg",
+    "tags": ["lifestyle"]
+  }
+]

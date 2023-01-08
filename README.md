@@ -12,24 +12,62 @@ Requisitos de instalación:
 
 ### How to install 💾
 
-	$ git clone https://github.com/ireneairyn/nodepop
+	$ git clone https://github.com/ireneairyn/backend-nodepop
 	$ cd nodepop
 	$ npm install
 	
-### Create database 📊
-	$ npm run installDB
+### Initialise database 📊
+	$ npm run init-db
 	
 ### Run the app 🏃‍♀️
 	$ npm start
 	
-	The app is configured to work in port 3003. 
+	The app is configured to work in port 3000. 
 	
-## Picture preview 🖼️
+## Testing 🧪
 
-- http://localhost:3003/images/anuncios/helmet.jpg 
-- http://localhost:3003/images/anuncios/tablet.jpg
-- http://localhost:3003/images/anuncios/whistle.jpg
+### Fetch all anuncio tags
 
+http://localhost:3000/api/v1/anuncios/tags
+
+### Fetch all anuncios
+
+http://localhost:3000/api/v1/anuncios
+
+### Fetch anuncios for a specific tag
+
+http://localhost:3000/api/v1/anuncios?tag=mobile
+
+### Fetch anuncios by tipo de anuncio
+
+http://localhost:3000/api/v1/anuncios?venta=true
+
+### Fetch anuncios by price ranges
+
+http://localhost:3000/api/v1/anuncios?precio=3
+http://localhost:3000/api/v1/anuncios?precio=5-
+http://localhost:3000/api/v1/anuncios?precio=5-100
+http://localhost:3000/api/v1/anuncios?precio=-100
+
+### Fetch anuncios by name
+
+http://localhost:3000/api/v1/anuncios?nombre=tab
+
+### Fetch anuncios with limit
+
+http://localhost:3000/api/v1/anuncios?limit=2
+
+### Fetch anuncios with limit and skip
+
+http://localhost:3000/api/v1/anuncios?limit=2&start=1
+
+### Fetch anuncios with a sort
+
+http://localhost:3000/api/v1/anuncios?sort=precio
+
+### Fetch anuncios with multiple filters
+
+http://localhost:3000/api/v1/anuncios?sort=precio&limit=1&precio=50-
 
 ## Built With 🛠️
 

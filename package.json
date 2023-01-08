@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "cross-env DEBUG=nodepop:* PORT=3003 nodemon",
-    "installDB": "node ./bin/install_db",
+    "init-db": "node ./init-db.js",
+    "dev": "cross-env DEBUG=nodepop:* PORT=3000 nodemon",
     "jshint": "./node_modules/.bin/jshint ./routes/api/.",
     "jscs": "./node_modules/.bin/jscs ./routes/api/."
   },

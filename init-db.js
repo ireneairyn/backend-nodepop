@@ -1,6 +1,7 @@
 
 // Cargando librerías
 const readline = require("readline");
+const anuncios = require("./config/anuncios.json")
 
 // Cargando modules
 const Anuncio = require("./models/Anuncio");
@@ -24,33 +25,12 @@ async function main() {
 
 main().catch(err => console.log("There was an error", err));
 
+
 async function initAnuncios(){
     const result = await Anuncio.deleteMany();
     console.log(`${result.deletedCount} anuncios removed`);
 
-    const inserted = await Anuncio.insertMany([
-        {
-            name: "Classic bicycle",
-            forSale: true,
-            price: 230.50,
-            image: "bicycle.jpg",
-            tags: ["lifestyle", "motor"]
-        },
-        {
-            name: "iPhone 14",
-            forSale: false,
-            price: 850.00,
-            image: "iphone14.jpg",
-            tags: ["lifestyle", "mobile"]
-        },
-        {
-            name: "Gaming chair",
-            forSale: true,
-            price: 110.00,
-            image: "gaming-chair.jpg",
-            tags: ["lifestyle", "work"]
-        }
-    ]);
+    const inserted = await Anuncio.insertMany(anuncios);
     console.log(`${inserted.length} new anuncios created.`);
 }
 

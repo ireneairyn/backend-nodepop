@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  dbURI: 'mongodb://localhost:3003/nodepop',
+  dbURI: 'mongodb://localhost:3000/nodepop',
   jwt: {
       secret: 'pruebaClave',
       expiresIn: '2d'
