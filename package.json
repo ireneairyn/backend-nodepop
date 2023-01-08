@@ -1,0 +1,30 @@
+{
+  "name": "nodepop",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "cross-env DEBUG=nodepop:* PORT=3003 nodemon",
+    "installDB": "node ./bin/install_db",
+    "jshint": "./node_modules/.bin/jshint ./routes/api/.",
+    "jscs": "./node_modules/.bin/jscs ./routes/api/."
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "jshint": "^2.13.6",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2",
+    "morgan": "~1.9.1",
+    "password-hash": "^1.2.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
