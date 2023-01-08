@@ -48,8 +48,11 @@ http://localhost:3000/api/v1/anuncios?venta=true
 ### Fetch anuncios by price ranges
 
 http://localhost:3000/api/v1/anuncios?precio=3
+
 http://localhost:3000/api/v1/anuncios?precio=5-
+
 http://localhost:3000/api/v1/anuncios?precio=5-100
+
 http://localhost:3000/api/v1/anuncios?precio=-100
 
 ### Fetch anuncios by name
